@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Search with Last Name only"
+        android:id="@+id/SearchTool"
+        android:icon="@drawable/search_filled_50px"
+        app:showAsAction="always"
+        android:tooltipText="Search with Last Name only"
+        app:actionViewClass="android.widget.SearchView"
+        />
+
+</menu>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Admin.Dashboard.AdminDashboard">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/placeholder"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/FirstName"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="First Name:"
+            android:gravity="left"
+
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/FirstNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" FirstNameText:"
+            android:layout_toRightOf="@id/FirstName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/LastName"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Last Name:"
+            android:gravity="left"
+
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/LastNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" LastNameText:"
+            android:layout_toRightOf="@id/LastName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Gender :"
+            android:gravity="left"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/GenderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GenderText:"
+            android:layout_toRightOf="@id/Gender"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Address:"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/AddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AddressText"
+            android:layout_toRightOf="@id/Address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/DateOfBirth"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="D.O.B:"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/DateOfBirthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateOfBirth"
+            android:layout_toRightOf="@id/DateOfBirth"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Designation"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Designation:"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/DesignationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DesignationText"
+            android:layout_toRightOf="@id/Designation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Country"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Country:"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/CountryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CountryText"
+            android:layout_toRightOf="@id/Country"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/State"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="State:"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout="@id/FirstName"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:id="@+id/StateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StateText"
+            android:layout_toRightOf="@id/State"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

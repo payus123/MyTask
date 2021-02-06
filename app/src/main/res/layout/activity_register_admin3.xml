@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Admin.Register.RegisterAdmin3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:transitionName="layoutTransition"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/left_filled_50px"
+            android:transitionName="leftArrow"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/CreateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Create
+            Account"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:transitionName="TransitionCreateAcc"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:onClick="SetImage"
+                android:src="@drawable/placeholder"
+                android:layout_centerHorizontal="true"
+
+                >
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:text="Please click the image to set your passport photo"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/Address"
+                android:layout_marginTop="5dp"
+                android:hint="Address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/home_filled_50px"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:boxStrokeWidthFocused="3dp"
+                app:startIconTint="@color/colorPrimary">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    >
+            <TextView
+                android:id="@+id/select"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Select Your Country :"
+                />
+            <Spinner
+                 android:id="@+id/SelectC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:forceHasOverlappingRendering="true"
+
+                />
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                >
+                <TextView
+                    android:id="@+id/selectState"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Select Your State :"
+                    />
+                <Spinner
+                    android:id="@+id/SelectS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_marginTop="10dp"
+
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Finish"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Finish"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textAllCaps="false"
+            android:layout_marginTop="20sp"
+            android:background="#D3B02E"
+            android:onClick="CallNextRegister"
+            android:shadowDx="@android:integer/config_longAnimTime"
+            android:elevation="340dp"
+            android:textStyle="bold"
+            android:transitionName="TransitionNextButton"
+            />
+        <TextView
+            android:id="@+id/DontHave"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an account?"
+            android:textColor="#51514B"
+            android:transitionName="DontHave"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/LoginHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login here."
+            android:textSize="15sp"
+            android:onClick="LoginPage"
+            android:textColor="@color/colorPrimary"
+            android:transitionName="LoginHere"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
